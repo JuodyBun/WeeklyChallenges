@@ -65,7 +65,7 @@ namespace ChallengesWithTestsMark8.Tests
         }
 
         [Theory]
-        [InlineData(0, true)]
+        [InlineData(0, true)] 
         [InlineData(2, true)]
         [InlineData(4, true)]
         [InlineData(6, true)]

@@ -8,98 +8,91 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            return Char.IsSymbol(c);
+            return Char.IsLetter(c);
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
             int total = vals.Count();
-            if (total % 2 == 0)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
+            return total % 2 == 0 ? true : false;
         }
 
         public bool IsNumberEven(int number)
         {
-            if (number % 2 == 0)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
+            return number % 2 == 0 ? true : false;
         }
 
         public bool IsNumberOdd(int num)
         {
-            if (num % 2 != 0)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
+            return num % 2 != 0 ? true : false;   
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            double minNum = numbers.Min();
-            double maxNum = numbers.Max();
-            return minNum + maxNum;
+            if (numbers == null || numbers.Count() == 0 )
+            {
+                return 0;
+            }
+            else
+            {
+                double minNum = numbers.Min();
+                double maxNum = numbers.Max();
+                return minNum + maxNum;
+            }
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            int length1 = str1.Length;
-            int length2 = str2.Length;
-
-            if (length1 > length2)
-            {
-                return length2;
-            } else
-            {
-                return length1;
-            }
+            return str1.Length < str2.Length ? str1.Length : str2.Length;
         }
 
         public int Sum(int[] numbers)
         {
+            if (numbers == null)
+            {
+                return 0;
+            }
             return numbers.Sum();
         }
 
         public int SumEvens(int[] numbers)
         {
-            int even = 0;
-
-            for (int i = 0; i < numbers.Length; i++)
+            if (numbers == null)
+            {
+                return 0;
+            }
+            int evenSum = 0;
+            foreach (int i in numbers)
             {
                 if (i % 2 == 0)
                 {
-                    even += numbers[i];
-                }
+                    evenSum += i;
+                } 
             }
-            return numbers.Sum();
+            return evenSum;
         }
 
         public bool IsSumOdd(List<int> numbers)
         {
-            int sum = numbers.Sum();
-            if (sum % 2 != 0)
-            {
-                return true;
-            } else
+            if (numbers == null)
             {
                 return false;
             }
+            int sum = numbers.Sum();
+            return (sum % 2 != 0) ? true : false;
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            int oddCount = 0;
+            for (int i = 0; i < number; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    oddCount++;
+                }
+            }
+            return oddCount;
         }
     }
 }

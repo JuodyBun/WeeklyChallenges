@@ -32,17 +32,27 @@ namespace ChallengesWithTestsMark8
 
         public long Multiply(long factor1, long factor2)
         {
-            return factor1 * factor2;
+            long product = factor1 * factor2;
+            return product;
         }
 
-        public string GetGreeting(string nameOfPerson)
+        public string GetGreeting(string personName)
         {
-            return ($"Hello {nameOfPerson}");
+            string expectedGreeting;
+            if (string.IsNullOrEmpty(personName) == true)
+            {
+                expectedGreeting = "Hello!";
+            }
+            else
+            {
+                expectedGreeting = $"Hello, {personName}!";
+            }
+            return expectedGreeting;
         }
 
         public string GetHey()
         {
-            return "Hey"; //I think this is it?
+            return "HEY!"; 
         }
     }
 }
