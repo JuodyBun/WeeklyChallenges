@@ -50,3 +50,4 @@ C:\Users\Bunhole\Desktop\TrueCoders\WeeklyChallenges\ChallengesWithTestsMark8\ob
 C:\Users\Bunhole\Desktop\TrueCoders\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.AssemblyInfo.cs
 C:\Users\Bunhole\Desktop\TrueCoders\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.dll
 C:\Users\Bunhole\Desktop\TrueCoders\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.pdb
+C:\Users\Bunhole\Desktop\TrueCoders\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\netcoreapp2.1\ChallengesWithTestsMark8.csprojAssemblyReference.cache
